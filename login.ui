@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QMainWindow" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* =====================================
+   LOGIN WINDOW
+   ===================================== */
+
+QMainWindow {
+    background-color: #F5F3EF;
+}
+
+QWidget {
+    background-color: #F5F3EF;
+    color: #1F2937;
+}
+
+
+/* =====================================
+   LOGIN HEADING
+   ===================================== */
+QLabel#login
+{color:#1F2937;
+background-color:transparent;
+font-size:26px;
+font-weight:bold;
+
+}
+QLabel {
+    background-color: transparent;
+    color: #374151;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =====================================
+   LOGIN INPUT FIELDS
+   ===================================== */
+
+QLineEdit {
+    background-color: #FFFFFF;
+    color: #1F2937;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+
+    padding: 5px;
+    font-size: 12px;
+}
+
+QLineEdit:hover {
+    border: 1px solid #A78BFA;
+}
+
+QLineEdit:focus {
+    border: 2px solid #7C3AED;
+    background-color: #FFFFFF;
+}
+
+
+/* =====================================
+   LOGIN BUTTON
+   ===================================== */
+
+QPushButton {
+    background-color: #7C3AED;
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #6D28D9;
+}
+
+QPushButton:pressed {
+    background-color: #5B21B6;
+}
+
+
+/* =====================================
+   BACK BUTTON
+   ===================================== */
+
+QPushButton#backbutton {
+    background-color: transparent;
+    color: #7C3AED;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButton#backbutton:hover {
+    background-color: #EDE9FE;
+    color: #6D28D9;
+}
+
+QPushButton#backbutton:pressed {
+    background-color: #DDD6FE;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="login">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>20</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>LOGIN</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="accnolabel">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>110</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <fontweight>DemiBold</fontweight>
+     </font>
+    </property>
+    <property name="text">
+     <string>Account Number:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pinlabel">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>160</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <fontweight>DemiBold</fontweight>
+     </font>
+    </property>
+    <property name="text">
+     <string>PIN :</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginbutton">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LOGIN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backbutton">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>233</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtaccno">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>111</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtpin">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>150</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::Password</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
