@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Bankicon.png</file>
+        <file>logout.png</file>
+    </qresource>
+</RCC>
